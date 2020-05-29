@@ -1,1 +1,0 @@
-let b = ()=>console.log("从src目录转过来的");

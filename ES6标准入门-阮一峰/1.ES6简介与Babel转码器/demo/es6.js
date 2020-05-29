@@ -1,1 +1,0 @@
-console.log((x => x + 1)(1));
