@@ -47,8 +47,8 @@ var _hmt = _hmt || [];
 
 function nav(): DefaultTheme.NavItem[] {
 	return [
-		{ text: 'Introduction', link: '/introduction/' },
-		{ text: "Guide", link: "/guide/" },
+		// { text: "Introduction", link: "/introduction/" },
+		// { text: "Guide", link: "/guide/" },
 		{ text: "Standard", link: "/standard/guide", activeMatch: "/standard/" },
 		{
 			text: "Books",
@@ -87,8 +87,9 @@ function nav(): DefaultTheme.NavItem[] {
 				{
 					text: "Uniapp",
 					items: [
-						{ text: "Components", link: "/packages/uniapp/components/" },
-						{ text: "SDK", link: "/packages/uniapp/sdk/" },
+						// { text: "Components", link: "/packages/uniapp/components/" },
+						// { text: "SDK", link: "/packages/uniapp/sdk/" },
+						{ text: "u-canvas", link: "/packages/uniapp/u-canvas/guide" },
 						{ text: "u-pointer", link: "/packages/uniapp/u-pointer/" },
 					],
 				},
@@ -121,6 +122,7 @@ function sidebar(): DefaultTheme.Sidebar {
 		"/books/java/": { base: "/books/java/", items: sidebarBooksJava() },
 		"/books/shell/": { base: "/books/shell/", items: sidebarBooksShell() },
 		"/books/linux/": { base: "/books/linux/", items: sidebarBooksLinux() },
+		"/packages/uniapp/u-canvas/": { base: "/packages/uniapp/u-canvas/", items: sidebarPackagesUniappUCanvas() },
 		"/problems/react/": { base: "/problems/react/", items: sidebarProblemsReact() },
 	};
 }
@@ -187,6 +189,55 @@ function sidebarBooksLinux(): DefaultTheme.SidebarItem[] {
 				{ text: "Shutdown", link: "shutdown" },
 				{ text: "User", link: "user" },
 			],
+		},
+	];
+}
+
+function sidebarPackagesUniappUCanvas(): DefaultTheme.SidebarItem[] {
+	return [
+		{
+			text: "Guide",
+			link: "guide",
+		},
+		{
+			text: "Aabb",
+			link: "aabb",
+		},
+		{
+			text: "Canvas",
+			link: "canvas",
+		},
+		{
+			text: "Path",
+			link: "path",
+		},
+		{
+			text: "UCanvas",
+			link: "u-canvas",
+		},
+		{
+			text: "Renderer",
+			link: "renderer",
+		},
+		{
+			text: "Graphics",
+			link: "graphics",
+		},
+		{
+			text: "Matrix",
+			link: "matrix",
+		},
+		{
+			text: "Line",
+			link: "line",
+		},
+		{
+			text: "Offset",
+			link: "offset",
+		},
+		{
+			text: "Point",
+			link: "point",
 		},
 	];
 }
