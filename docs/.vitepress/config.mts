@@ -55,6 +55,7 @@ function nav(): DefaultTheme.NavItem[] {
 			activeMatch: "/books/",
 			items: [
 				{ text: "Refactoring 2", link: "/books/refactoring2/", activeMatch: "/books/refactoring2/" },
+				{ text: "Flutter Frames", link: "/books/flutter-frames/", activeMatch: "/books/flutter-frames/" },
 				{ text: "Java", link: "/books/java/pojo/", activeMatch: "/books/java/" },
 				{ text: "Shell", link: "/books/shell/guide/", activeMatch: "/books/shell/" },
 				{ text: "Linux", link: "/books/linux/package/", activeMatch: "/books/linux/" },
