@@ -19,3 +19,7 @@
 4. 内置常用图形
 
 5. 统一绘制接口
+
+## 相关链接
+
+- [u-canvas 文档](https://www.webliuyang.com/packages/uniapp/u-canvas/guide.html)
