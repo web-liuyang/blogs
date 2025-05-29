@@ -25,3 +25,9 @@ UCanvas 实例
 #### renderRoot(): void
 
 渲染
+
+#### getContext(): void
+
+渲染
+
+

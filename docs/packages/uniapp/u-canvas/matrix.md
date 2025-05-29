@@ -89,12 +89,12 @@ outline: deep
 | tx   | number | x 偏移量 |
 | ty   | number | y 偏移量 |
 
-#### scale(x: number, y: number, point?: Point): Matrix
+#### scale(x: number, y: number, point?: Point | null): Matrix
 
 缩放
 
-| 名称  | 类型               | 描述                 |
-| ----- | ------------------ | -------------------- |
-| x     | number             | x 倍率               |
-| y     | number             | y 倍率               |
-| point | Point \| undefined | 根据此坐标点进行缩放 |
+| 名称  | 类型                       | 描述                 |
+| ----- | -------------------------- | -------------------- |
+| x     | number                     | x 倍率               |
+| y     | number                     | y 倍率               |
+| point | Point \| undefined \| null | 根据此坐标点进行缩放 |

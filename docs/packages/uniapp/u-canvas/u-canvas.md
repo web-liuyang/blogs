@@ -66,14 +66,6 @@ Canvas 上下文
 | ------- | ------- | ---- |
 | graphic | Graphic | 图形 |
 
-### cancelAnimationFrame(taskId): void
-
-取消一个先前通过调用 uni.requestAnimationFrame() 方法添加到计划中的动画帧请求
-
-| 名称   | 类型   | 描述    |
-| ------ | ------ | ------- |
-| taskId | number | 任务 ID |
-
 ### cleanCanvas(): void
 
 清除当前画布内容
@@ -82,9 +74,9 @@ Canvas 上下文
 
 清除所有图形
 
-### createImageResource(src) : Promise\<ImageResource\>
+### createImage(src) : Promise\<Image\>
 
-创建 ImageResource
+创建 Image
 
 | 名称 | 类型   | 描述     |
 | ---- | ------ | -------- |
@@ -114,21 +106,24 @@ Canvas 上下文
 
 渲染
 
-### requestAnimationFrame(callback): number
+### createCompatibleImageData(data : Uint8ClampedArray, w : number, h : number) : ImageData
 
-在下一次重绘之前，调用用户提供的回调函数
+创建 ImageData 兼容全平台
 
-| 名称     | 类型                          | 描述     |
-| -------- | ----------------------------- | -------- |
-| callback | RequestAnimationFrameCallback | 回调函数 |
+| 名称   | 类型              | 描述 |
+| ------ | ----------------- | ---- |
+| data   | Uint8ClampedArray | 数据 |
+| width  | number            | 宽度 |
+| height | number            | 高度 |
 
 ### toBlob(type?, quality?): Promise\<Blob\>
 
-返回一个包含图片展示的 data URI
+创造 Blob 对象
 
-| 名称     | 类型                          | 描述     |
-| -------- | ----------------------------- | -------- |
-| callback | RequestAnimationFrameCallback | 回调函数 |
+| 名称    | 类型                | 描述 |
+| ------- | ------------------- | ---- |
+| type    | string \| undefined | 类型 |
+| quality | number \| undefined | 质量 |
 
 ### toCanvasPoint(point): Point
 

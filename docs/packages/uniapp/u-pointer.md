@@ -1,7 +1,3 @@
----
-outline: deep
----
-
 # u-pointer
 
 ### 介绍
@@ -59,7 +55,7 @@ outline: deep
 #### 使用方法
 
 ```vue
-<script lang="ts" setup>
+<script lang="uts" setup>
 import { onMounted, onUnmounted } from "vue";
 import { PointerdownEvent, globalPointer } from "@/uni_modules/u-pointer";
 function pointerdown(event: PointerdownEvent): void {
@@ -67,11 +63,11 @@ function pointerdown(event: PointerdownEvent): void {
 }
 
 onMounted(() => {
-	globalPointer.addEventListener("onpointerdown", pointerdown);
+	globalPointer.addEventListener(`onpointerdown`, pointerdown);
 });
 
 onUnmounted(() => {
-	globalPointer.removeEventListener("onpointerdown", pointerdown);
+	globalPointer.removeEventListener(`onpointerdown`, pointerdown);
 });
 </script>
 

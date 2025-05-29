@@ -108,7 +108,7 @@ id
 
 全局偏移量
 
-#### style?: Style
+#### style?: Style | null
 
 样式
 
@@ -116,7 +116,7 @@ id
 
 在调用 paint 之前注入的 uCanvas 实例
 
-#### parent?: Graphic;
+#### parent?: Graphic | null;
 
 父图形
 
@@ -124,11 +124,11 @@ id
 
 局部矩阵
 
-#### worldMatrix: Matrix;
+### 成员方法
+
+#### getWorldMatrix(): Matrix
 
 全局矩阵
-
-### 成员方法
 
 #### getAabb(): Aabb
 
@@ -147,7 +147,7 @@ id
 | canvas | Canvas | 画布       |
 | offset | Offset | 全局偏移量 |
 
-#### hitTest(point): Graphic | undefined
+#### hitTest(point): Graphic | undefined | null
 
 命中测试
 
@@ -209,7 +209,7 @@ Graphic
 
 裁剪图像数据的宽度, 默认是整个图像数据的高度
 
-## Image
+## Picture
 
 图像
 
@@ -217,17 +217,37 @@ Graphic
 
 Graphic
 
+### 静态方法
+
+#### fromSimple(options): Picture
+
+| 名称    | 类型                 | 描述 |
+| ------- | -------------------- | ---- |
+| options | PictureSimpleOptions | 参数 |
+
+#### fromSize(options): Picture
+
+| 名称    | 类型               | 描述 |
+| ------- | ------------------ | ---- |
+| options | PictureSizeOptions | 参数 |
+
+#### fromShear(options): Picture
+
+| 名称    | 类型                | 描述 |
+| ------- | ------------------- | ---- |
+| options | PictureShearOptions | 参数 |
+
 ### 构造函数
 
-#### new Image (options)
+#### new Picture (options)
 
-| 名称    | 类型         | 描述             |
-| ------- | ------------ | ---------------- |
-| options | ImageOptions | Image 的构造参数 |
+| 名称    | 类型           | 描述               |
+| ------- | -------------- | ------------------ |
+| options | PictureOptions | Picture 的构造参数 |
 
 ### 成员属性
 
-#### imageData: ImageData
+#### image: Image
 
 图像数据
 
@@ -239,27 +259,27 @@ Graphic
 
 基点 y 坐标
 
-#### w: number | undefined
+#### w: number | undefined | null
 
 宽度
 
-#### h: number | undefined
+#### h: number | undefined | null
 
 高度
 
-#### dx: number | undefined
+#### dx: number | undefined | null
 
 裁剪图像数据的偏移量, 默认是整个图像数据的左上角（x 坐标）
 
-#### dy: number | undefined
+#### dy: number | undefined | null
 
 裁剪图像数据的偏移量, 默认是整个图像数据的左上角（y 坐标）
 
-#### dw: number | undefined
+#### dw: number | undefined | null
 
 裁剪图像数据的宽度, 默认是整个图像数据的宽度
 
-#### dh: number | undefined
+#### dh: number | undefined | null
 
 裁剪图像数据的宽度, 默认是整个图像数据的高度
 
@@ -365,9 +385,9 @@ Graphic
 
 #### fromCenter(options): Rectangle
 
-| 名称    | 类型                       | 描述 |
-| ------- | -------------------------- | ---- |
-| options | RectangleFromCenterOptions | 参数 |
+| 名称    | 类型                   | 描述 |
+| ------- | ---------------------- | ---- |
+| options | RectangleCenterOptions | 参数 |
 
 ### 构造函数
 
