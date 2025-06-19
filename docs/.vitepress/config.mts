@@ -40,7 +40,7 @@ var _hmt = _hmt || [];
 		sidebar: sidebar(),
 		socialLinks: [{ icon: "github", link: "https://github.com/web-liuyang" }],
 		footer: {
-			copyright: "MIT Licensed | Copyright 2021-present LiuYang 蜀ICP备2021005160号",
+			copyright: `MIT Licensed | Copyright 2021-present LiuYang <a href="https://beian.miit.gov.cn/" target='_blank'>蜀ICP备2021005160号</a>`,
 		},
 	},
 });
