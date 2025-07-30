@@ -2,15 +2,15 @@
 
 ## 基本信息
 
-| 项目         | 内容                                                                         |
-| ---------- | -------------------------------------------------------------------------- |
-| **姓名**     | 刘洋                                                                         |
-| **联系电话**   | 18284335838                                                                |
-| **年龄**     | 25岁                                                                        |
-| **工作经验**   | 5年前端开发经验                                                                   |
-| **GitHub** | [web-liuyang](https://github.com/web-liuyang)                              |
-| **技术博客**   | [webliuyang.com](http://webliuyang.com)                                    |
-| **在线简历**   | [http://webliuyang.com/introduction/](http://webliuyang.com/introduction/) |
+| 项目         | 内容                                                                  |
+| ---------- | ------------------------------------------------------------------- |
+| **姓名**     | 刘洋                                                                  |
+| **联系电话**   | 18284335838                                                         |
+| **年龄**     | 25岁                                                                 |
+| **工作经验**   | 5年前端开发经验                                                            |
+| **GitHub** | [web-liuyang](https://github.com/web-liuyang)                       |
+| **技术博客**   | [webliuyang.com](http://webliuyang.com)                             |
+| **在线简历**   | [webliuyang.com/introduction/](http://webliuyang.com/introduction/) |
 
 ## 技术专长
 
